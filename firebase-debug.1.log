@@ -1,0 +1,155 @@
+[debug] [2021-07-14T10:28:58.563Z] ----------------------------------------------------------------------
+[debug] [2021-07-14T10:28:58.566Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-14T10:28:58.567Z] CLI Version:   9.12.1
+[debug] [2021-07-14T10:28:58.567Z] Platform:      win32
+[debug] [2021-07-14T10:28:58.567Z] Node Version:  v16.2.0
+[debug] [2021-07-14T10:28:58.568Z] Time:          Wed Jul 14 2021 15:58:58 GMT+0530 (India Standard Time)
+[debug] [2021-07-14T10:28:58.568Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-14T10:28:58.576Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-14T10:28:58.576Z] > authorizing via signed-in user (prathamtripathi011@gmail.com)
+[debug] [2021-07-14T10:28:58.576Z] [iam] checking project prathamtripathi11-c82e2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-14T10:28:58.578Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-14T10:28:58.579Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-14T10:28:58.864Z] <<< HTTP RESPONSE 200 {"date":"Wed, 14 Jul 2021 10:28:56 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-14T10:28:59.399Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/prathamtripathi11-c82e2:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-14T10:29:01.012Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Jul 2021 10:28:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1376","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-14T10:29:01.013Z] > refreshing access token with scopes: []
+[debug] [2021-07-14T10:29:01.014Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-14T10:29:01.248Z] <<< HTTP RESPONSE 200 {"date":"Wed, 14 Jul 2021 10:28:59 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-14T10:29:01.620Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/prathamtripathi11-c82e2 [none]
+[debug] [2021-07-14T10:29:01.978Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/prathamtripathi11-c82e2 200
+[debug] [2021-07-14T10:29:01.978Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/prathamtripathi11-c82e2 {"projectId":"prathamtripathi11-c82e2","projectNumber":"35422747769","displayName":"prathamtripathi11","name":"projects/prathamtripathi11-c82e2","resources":{"hostingSite":"prathamtripathi11-c82e2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'prathamtripathi11-c82e2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-07-14T10:29:01.982Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-14T10:29:01.982Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-14T10:29:02.369Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 14 Jul 2021 10:29:00 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-14T10:29:02.778Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/prathamtripathi11-c82e2/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-07-14T10:29:04.865Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Jul 2021 10:29:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[prathamtripathi11-c82e2]: beginning deploy... 
+[debug] [2021-07-14T10:29:05.155Z] Error: EPERM: operation not permitted, scandir 'C:/Users/Lenovo/Desktop/Portfolio/public/firebase-debug.log'
+    at Object.readdirSync (node:fs:1381:3)
+    at GlobSync._readdir (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at Function.globSync [as sync] (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at Object.listFiles (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at runDeploys (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:35)
+    at deploy (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:73:12)
+    at _chain (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:23:40)
+    at C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-07-14T10:29:47.844Z] ----------------------------------------------------------------------
+[debug] [2021-07-14T10:29:47.846Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-14T10:29:47.846Z] CLI Version:   9.12.1
+[debug] [2021-07-14T10:29:47.846Z] Platform:      win32
+[debug] [2021-07-14T10:29:47.846Z] Node Version:  v16.2.0
+[debug] [2021-07-14T10:29:47.847Z] Time:          Wed Jul 14 2021 15:59:47 GMT+0530 (India Standard Time)
+[debug] [2021-07-14T10:29:47.847Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-14T10:29:47.853Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-14T10:29:47.854Z] > authorizing via signed-in user (prathamtripathi011@gmail.com)
+[debug] [2021-07-14T10:29:47.854Z] [iam] checking project prathamtripathi11-c82e2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-14T10:29:47.856Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/prathamtripathi11-c82e2:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-14T10:29:49.418Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Jul 2021 10:29:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1410","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-14T10:29:49.420Z] > refreshing access token with scopes: []
+[debug] [2021-07-14T10:29:49.420Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-14T10:29:49.658Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 14 Jul 2021 10:29:47 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-14T10:29:50.495Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/prathamtripathi11-c82e2 [none]
+[debug] [2021-07-14T10:29:50.953Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/prathamtripathi11-c82e2 200
+[debug] [2021-07-14T10:29:50.954Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/prathamtripathi11-c82e2 {"projectId":"prathamtripathi11-c82e2","projectNumber":"35422747769","displayName":"prathamtripathi11","name":"projects/prathamtripathi11-c82e2","resources":{"hostingSite":"prathamtripathi11-c82e2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'prathamtripathi11-c82e2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-07-14T10:29:50.958Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-14T10:29:50.958Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-14T10:29:51.193Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 14 Jul 2021 10:29:49 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-14T10:29:52.142Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/prathamtripathi11-c82e2/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-07-14T10:29:52.912Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Jul 2021 10:29:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[prathamtripathi11-c82e2]: beginning deploy... 
+[debug] [2021-07-14T10:29:53.134Z] Error: EPERM: operation not permitted, scandir 'C:/Users/Lenovo/Desktop/Portfolio/public/firebase-debug.log'
+    at Object.readdirSync (node:fs:1381:3)
+    at GlobSync._readdir (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at Function.globSync [as sync] (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at Object.listFiles (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at runDeploys (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:35)
+    at deploy (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:73:12)
+    at _chain (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:23:40)
+    at C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-07-14T10:34:17.446Z] ----------------------------------------------------------------------
+[debug] [2021-07-14T10:34:17.447Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-14T10:34:17.447Z] CLI Version:   9.16.0
+[debug] [2021-07-14T10:34:17.448Z] Platform:      win32
+[debug] [2021-07-14T10:34:17.448Z] Node Version:  v16.2.0
+[debug] [2021-07-14T10:34:17.448Z] Time:          Wed Jul 14 2021 16:04:17 GMT+0530 (India Standard Time)
+[debug] [2021-07-14T10:34:17.448Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-14T10:34:17.501Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-14T10:34:17.501Z] > authorizing via signed-in user (prathamtripathi011@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lenovo\Desktop\Portfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using prathamtripathi11-c82e2. 
+[debug] [2021-07-14T10:34:31.984Z] > refreshing access token with scopes: []
+[debug] [2021-07-14T10:34:31.985Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-14T10:34:32.234Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 14 Jul 2021 10:34:30 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-14T10:34:32.970Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/prathamtripathi11-c82e2 [none]
+[debug] [2021-07-14T10:34:33.521Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/prathamtripathi11-c82e2 200
+[debug] [2021-07-14T10:34:33.521Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/prathamtripathi11-c82e2 {"projectId":"prathamtripathi11-c82e2","projectNumber":"35422747769","displayName":"prathamtripathi11","name":"projects/prathamtripathi11-c82e2","resources":{"hostingSite":"prathamtripathi11-c82e2"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
